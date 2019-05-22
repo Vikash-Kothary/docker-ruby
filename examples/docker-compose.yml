@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  ruby-alpine:
+    image: vikashkothary/ruby:2.6-alpine3.9
+    container_name: ruby_alpine
+    restart: always
+    stdin_open: true
+    tty: true

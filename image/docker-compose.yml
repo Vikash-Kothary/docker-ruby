@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  ruby-ubuntu:
+    image: vikashkothary/ruby:2.6-ubuntu19.04
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  ruby-alpine:
+    image: vikashkothary/ruby:2.6-alpine3.9
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  ruby-distroless:
+    image: vikashkothary/ruby:2.6-distroless
+    build:
+      context: .
+      dockerfile: Docker0file
